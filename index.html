@@ -77,6 +77,24 @@
     .mini-design .body:after{content:"Muestra simulada";display:inline-flex;margin-top:10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:900;color:#475569}
     @media(max-width:900px){.navlinks{display:none}.hero{padding:34px 0 18px}.hero-grid,.proof-box{grid-template-columns:1fr}.mock-card{max-width:500px;margin:8px auto 0}.packs,.problem-grid,.steps{grid-template-columns:1fr}.pack.featured{transform:none}.examples-grid{grid-template-columns:1fr 1fr}.faq{grid-template-columns:1fr}.floating-note{right:12px;bottom:18px}.sample-flyer{min-height:430px}.flash-head{display:block}.flash-badge{display:inline-flex;margin-top:14px}.design-reel{grid-template-columns:1fr}.mini-design{transform:none;min-height:280px}.mobile-sample-jump{display:inline-flex}}
     @media(max-width:560px){.wrap{width:min(100% - 22px,1120px)}.nav{height:62px}.brand{font-size:19px}.brand-mark{width:34px;height:34px;border-radius:11px}.nav>.btn{padding:10px 13px;min-height:40px;font-size:13px}h1{font-size:39px;line-height:1;letter-spacing:-.06em}.lead{font-size:17px;margin-bottom:20px}.hero-actions{gap:9px}.hero-actions .btn{width:100%;padding:13px 16px}.trust-row{gap:8px}.trust-pill{font-size:12px;padding:7px 10px}.mobile-sample-jump{width:100%;justify-content:center}.mock-card{padding:12px;border-radius:24px}.sample-flyer{min-height:360px;border-radius:18px}.sample-top{padding:18px}.sample-top h2{font-size:30px}.sample-body{padding:15px}.deal{padding:12px 13px;margin-bottom:10px}.deal strong{font-size:17px}.deal span{font-size:22px}.sample-footer{font-size:13px;padding:12px;display:block}.floating-note{position:static;margin-top:10px;max-width:none;font-size:13px}.design-flash{padding:24px 0 46px}.flash-shell{padding:14px;border-radius:24px}.flash-head h2{font-size:30px}.flash-head p{font-size:15px}.flash-badge{font-size:12px;white-space:normal}.design-reel{gap:14px}.mini-design{min-height:250px;border-radius:20px}.mini-design .top{padding:18px}.mini-design .top h3{font-size:25px}.mini-design .body{padding:14px}.mini-design .big-price{font-size:34px}.mini-design .foot{left:14px;right:14px;bottom:14px;padding:11px;font-size:13px}.format-row{justify-content:flex-start;gap:8px}.format-row span{font-size:12px;padding:8px 9px}.section-head h2{font-size:30px}.section-head p{font-size:16px}.examples-grid{grid-template-columns:1fr}.final-card{padding:28px 18px;border-radius:26px}.sticky-mobile{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30}.sticky-mobile .btn{width:100%;box-shadow:0 16px 36px rgba(22,163,74,.34)}body{padding-bottom:76px}.topbar{position:relative}}
+  
+
+    /* Carrusel real de muestras simuladas */
+    .samples-player .flash-shell{overflow:hidden}
+    .sample-player{position:relative;margin-top:8px;padding:0 54px 44px}
+    .sample-viewport{overflow:hidden;border-radius:28px;padding:10px 2px 18px;touch-action:pan-y}
+    .sample-track{display:flex;gap:18px;transition:transform .55s cubic-bezier(.22,1,.36,1);will-change:transform}
+    .sample-slide{flex:0 0 calc((100% - 36px)/3);transform:none!important;min-height:350px;display:block}
+    .sample-slide .sample-copy{color:#334155;font-weight:600;line-height:1.35;margin:10px 0 12px;font-size:15px}
+    .service .top{background:linear-gradient(135deg,#2563eb,#06b6d4)}.service .big-price{color:#1d4ed8}.service .foot{background:#dbeafe;color:#1e40af}
+    .print .top{background:linear-gradient(135deg,#7c3aed,#ec4899)}.print .big-price{color:#7c3aed}.print .foot{background:#f3e8ff;color:#6d28d9}
+    .sample-nav{position:absolute;top:42%;transform:translateY(-50%);z-index:3;width:42px;height:42px;border-radius:999px;border:1px solid #dbe4ef;background:#fff;box-shadow:0 12px 30px rgba(15,23,42,.14);font-size:34px;line-height:1;color:#0f172a;cursor:pointer;display:grid;place-items:center;padding-bottom:4px}
+    .sample-nav.prev{left:0}.sample-nav.next{right:0}.sample-nav:hover{background:#ecfdf5;color:#166534;border-color:#86efac}
+    .sample-dots{position:absolute;left:0;right:0;bottom:4px;display:flex;justify-content:center;gap:8px}
+    .sample-dot{width:9px;height:9px;border-radius:999px;border:0;background:#cbd5e1;cursor:pointer;transition:.25s ease}.sample-dot.active{width:28px;background:#22c55e}
+    @media(max-width:900px){.sample-player{padding:0 46px 42px}.sample-slide{flex-basis:calc((100% - 18px)/2);min-height:320px}}
+    @media(max-width:640px){.sample-player{padding:0 0 42px}.sample-viewport{overflow:hidden;border-radius:22px;padding:8px 0 16px}.sample-track{gap:0}.sample-slide{flex:0 0 100%;min-height:330px;border-radius:22px}.sample-slide .top h3{font-size:30px}.sample-slide .big-price{font-size:42px}.sample-slide .sample-copy{font-size:15px}.sample-nav{top:auto;bottom:0;width:38px;height:38px;font-size:30px}.sample-nav.prev{left:calc(50% - 90px)}.sample-nav.next{right:calc(50% - 90px)}.sample-dots{bottom:13px;pointer-events:none}.format-row{margin-top:8px}}
+
   </style>
 </head>
 <body>
@@ -127,33 +145,52 @@
       </div>
     </section>
 
-    <section id="muestras" class="design-flash" aria-labelledby="flash-title">
+    <section id="muestras" class="design-flash samples-player" aria-labelledby="flash-title">
       <div class="wrap">
         <div class="flash-shell">
           <div class="flash-head">
             <div>
-              <h2 id="flash-title">Así se verían tus avisos antes de publicarlos.</h2>
-              <p>Mockups rápidos para que el cliente imagine el resultado: oferta de bodega, menú de comida, lista de barbería o cartel imprimible.</p>
+              <h2 id="flash-title">Muestras simuladas que se reproducen solas.</h2>
+              <p>Desliza o espera unos segundos: verás ejemplos de avisos para bodega, comida, barbería, servicios y cartel imprimible.</p>
             </div>
-            <span class="flash-badge">Muestras simuladas · texto legible</span>
+            <span class="flash-badge">▶ Reproducción automática</span>
           </div>
-          <div class="design-reel">
-            <article class="mini-design bodega">
-              <div class="top"><small>Bodega Santa Rosa</small><h3>Promo familiar</h3></div>
-              <div class="body"><div class="big-price">S/ 12.90</div><div class="line" style="width:92%"></div><div class="line" style="width:72%"></div><div class="line" style="width:84%"></div></div>
-              <div class="foot">Estado WhatsApp + cartel A4</div>
-            </article>
-            <article class="mini-design menu">
-              <div class="top"><small>Menú del día</small><h3>Pollo + sopa + refresco</h3></div>
-              <div class="body"><div class="big-price">S/ 15</div><div class="line" style="width:80%"></div><div class="line" style="width:68%"></div><div class="line" style="width:90%"></div></div>
-              <div class="foot">Menú para enviar por WhatsApp</div>
-            </article>
-            <article class="mini-design barber">
-              <div class="top"><small>Barbería El Corte</small><h3>Lista de precios</h3></div>
-              <div class="body"><div class="big-price">desde S/ 18</div><div class="line" style="width:88%"></div><div class="line" style="width:76%"></div><div class="line" style="width:64%"></div></div>
-              <div class="foot">Servicios claros para publicar</div>
-            </article>
+
+          <div class="sample-player" data-sample-player>
+            <button class="sample-nav prev" type="button" aria-label="Ver muestra anterior">‹</button>
+            <div class="sample-viewport">
+              <div class="sample-track">
+                <article class="mini-design bodega sample-slide">
+                  <div class="top"><small>Bodega Santa Rosa</small><h3>Promo familiar</h3></div>
+                  <div class="body"><div class="big-price">S/ 12.90</div><p class="sample-copy">Combo ahorro: arroz + aceite + azúcar para publicar hoy en WhatsApp.</p><div class="line" style="width:92%"></div><div class="line" style="width:72%"></div></div>
+                  <div class="foot">Estado WhatsApp + cartel A4</div>
+                </article>
+                <article class="mini-design menu sample-slide">
+                  <div class="top"><small>Menú del día</small><h3>Pollo + sopa + refresco</h3></div>
+                  <div class="body"><div class="big-price">S/ 15</div><p class="sample-copy">Menú claro para enviar a clientes y pegar en la puerta.</p><div class="line" style="width:80%"></div><div class="line" style="width:68%"></div></div>
+                  <div class="foot">Menú para enviar por WhatsApp</div>
+                </article>
+                <article class="mini-design barber sample-slide">
+                  <div class="top"><small>Barbería El Corte</small><h3>Lista de precios</h3></div>
+                  <div class="body"><div class="big-price">desde S/ 18</div><p class="sample-copy">Servicios ordenados: corte, barba, cejas y promociones.</p><div class="line" style="width:88%"></div><div class="line" style="width:76%"></div></div>
+                  <div class="foot">Servicios claros para publicar</div>
+                </article>
+                <article class="mini-design service sample-slide">
+                  <div class="top"><small>Técnico a domicilio</small><h3>Reparación express</h3></div>
+                  <div class="body"><div class="big-price">S/ 35</div><p class="sample-copy">Aviso para captar clientes: celulares, laptops o electrodomésticos.</p><div class="line" style="width:84%"></div><div class="line" style="width:70%"></div></div>
+                  <div class="foot">Historia vertical + flyer</div>
+                </article>
+                <article class="mini-design print sample-slide">
+                  <div class="top"><small>Cartel imprimible</small><h3>Oferta de la semana</h3></div>
+                  <div class="body"><div class="big-price">A4</div><p class="sample-copy">Diseño limpio para imprimir, pegar en vitrina y mandar por chat.</p><div class="line" style="width:90%"></div><div class="line" style="width:62%"></div></div>
+                  <div class="foot">PDF + imagen lista</div>
+                </article>
+              </div>
+            </div>
+            <button class="sample-nav next" type="button" aria-label="Ver siguiente muestra">›</button>
+            <div class="sample-dots" aria-label="Selector de muestras"></div>
           </div>
+
           <div class="format-row"><span>Flyer cuadrado</span><span>Historia vertical</span><span>Cartel A4</span><span>Banner WhatsApp</span><span>Lista de precios</span></div>
         </div>
       </div>
@@ -253,6 +290,28 @@
   <div class="sticky-mobile"><a class="btn btn-primary" href="#paquetes">Ver paquetes desde S/29</a></div>
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');const el=document.querySelector(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}}));
+
+    const samplePlayer=document.querySelector('[data-sample-player]');
+    if(samplePlayer){
+      const track=samplePlayer.querySelector('.sample-track');
+      const slides=[...samplePlayer.querySelectorAll('.sample-slide')];
+      const prev=samplePlayer.querySelector('.prev');
+      const next=samplePlayer.querySelector('.next');
+      const dotsWrap=samplePlayer.querySelector('.sample-dots');
+      let index=0,timer=null,startX=0;
+      slides.forEach((_,i)=>{const b=document.createElement('button');b.className='sample-dot';b.type='button';b.setAttribute('aria-label','Ver muestra '+(i+1));b.addEventListener('click',()=>go(i,true));dotsWrap.appendChild(b);});
+      const dots=[...dotsWrap.children];
+      function perView(){return matchMedia('(max-width:640px)').matches?1:(matchMedia('(max-width:900px)').matches?2:3)}
+      function maxIndex(){return Math.max(0,slides.length-perView())}
+      function go(i,manual=false){index=Math.max(0,Math.min(i,maxIndex()));const slideW=slides[0].getBoundingClientRect().width;const gap=parseFloat(getComputedStyle(track).gap)||0;track.style.transform='translateX(-'+((slideW+gap)*index)+'px)';dots.forEach((d,n)=>d.classList.toggle('active',n===index));if(manual)restart();}
+      function restart(){clearInterval(timer);timer=setInterval(()=>go(index>=maxIndex()?0:index+1),2600)}
+      prev.addEventListener('click',()=>go(index-1,true));
+      next.addEventListener('click',()=>go(index>=maxIndex()?0:index+1,true));
+      track.addEventListener('touchstart',e=>{startX=e.touches[0].clientX},{passive:true});
+      track.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-startX;if(Math.abs(dx)>45)go(index+(dx<0?1:-1),true)},{passive:true});
+      addEventListener('resize',()=>go(index));
+      go(0);restart();
+    }
   </script>
 </body>
 </html>
