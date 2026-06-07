@@ -1,0 +1,14 @@
+services:
+  promoflash-landing:
+    build: .
+    container_name: promoflash-landing
+    restart: unless-stopped
+    ports:
+      - "8120:80"
+    networks:
+      - promoflash_net
+
+networks:
+  promoflash_net:
+    name: promoflash_net
+    driver: bridge

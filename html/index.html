@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PromoFlash — Avisos listos para tu negocio en 24 horas</title>
+  <meta name="description" content="Paquetes de diseños y avisos para bodegas, barberías, restaurantes y negocios pequeños. Flyers, carteles A4, banners de WhatsApp y listas de precios desde S/29." />
+  <meta name="theme-color" content="#16a34a" />
+  <meta property="og:title" content="PromoFlash — Avisos para negocios desde S/29" />
+  <meta property="og:description" content="Recibe avisos listos para WhatsApp, Facebook e impresión. Paquetes claros, entrega rápida y pago por Yape/Plin." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7faf8;
+      --surface:#ffffff;
+      --ink:#0f172a;
+      --muted:#475569;
+      --soft:#e7f6ed;
+      --soft2:#fff7ed;
+      --green:#16a34a;
+      --green-dark:#15803d;
+      --blue:#2563eb;
+      --amber:#f59e0b;
+      --border:#dfe8e3;
+      --shadow:0 22px 60px rgba(15,23,42,.10),0 8px 24px rgba(15,23,42,.06);
+      --radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;font-weight:400}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(247,250,248,.86);backdrop-filter:blur(16px);border-bottom:1px solid rgba(223,232,227,.8)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.04em;font-size:21px}
+    .brand-mark{width:38px;height:38px;border-radius:13px;background:linear-gradient(135deg,#22c55e,#16a34a 55%,#0ea5e9);display:grid;place-items:center;color:white;box-shadow:0 10px 24px rgba(22,163,74,.28)}
+    .navlinks{display:flex;align-items:center;gap:22px;color:#334155;font-size:14px;font-weight:600}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 20px;font-weight:800;cursor:pointer;transition:.2s ease;min-height:46px}
+    .btn-primary{background:var(--green);color:white;box-shadow:0 12px 26px rgba(22,163,74,.25)}
+    .btn-primary:hover{background:var(--green-dark);transform:translateY(-1px)}
+    .btn-ghost{background:white;color:#166534;border:1px solid #bbf7d0}
+    .hero{padding:72px 0 42px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:-180px -120px auto auto;width:520px;height:520px;background:radial-gradient(circle,rgba(34,197,94,.20),transparent 62%);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:44px;align-items:center}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;background:#ecfdf5;color:#166534;border:1px solid #bbf7d0;border-radius:999px;padding:8px 12px;font-size:13px;font-weight:800;margin-bottom:18px}
+    h1{font-size:clamp(42px,6vw,72px);line-height:.96;letter-spacing:-.07em;margin:0 0 22px;font-weight:800;color:#061b31;text-wrap:balance}
+    .lead{font-size:clamp(18px,2vw,22px);color:#334155;margin:0 0 28px;max-width:650px;font-weight:400}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+    .trust-row{display:flex;flex-wrap:wrap;gap:12px;color:#475569;font-weight:600;font-size:14px}
+    .trust-pill{background:white;border:1px solid var(--border);border-radius:999px;padding:8px 12px}
+    .mock-card{background:linear-gradient(180deg,#ffffff,#f8fafc);border:1px solid var(--border);border-radius:32px;box-shadow:var(--shadow);padding:20px;position:relative}
+    .sample-flyer{border-radius:24px;overflow:hidden;background:#0f172a;color:white;min-height:560px;display:flex;flex-direction:column;position:relative}
+    .sample-top{background:linear-gradient(135deg,#16a34a,#22c55e);padding:26px}
+    .sample-top small{display:inline-block;background:rgba(255,255,255,.22);padding:6px 10px;border-radius:999px;font-weight:800;margin-bottom:14px}
+    .sample-top h2{font-size:42px;line-height:1;margin:0;letter-spacing:-.06em}
+    .sample-body{padding:24px;background:#ffffff;color:#0f172a;flex:1}
+    .deal{display:flex;align-items:center;justify-content:space-between;border:2px dashed #bbf7d0;background:#f0fdf4;border-radius:18px;padding:16px 18px;margin-bottom:14px}
+    .deal strong{font-size:22px}.deal span{font-size:30px;color:#15803d;font-weight:900;letter-spacing:-.05em}
+    .sample-footer{margin-top:auto;background:#fff7ed;border-radius:18px;padding:18px;color:#9a3412;font-weight:800;display:flex;justify-content:space-between;gap:10px;align-items:center}
+    .floating-note{position:absolute;right:-12px;bottom:32px;background:#fff;border:1px solid var(--border);box-shadow:0 14px 40px rgba(15,23,42,.14);border-radius:18px;padding:14px 16px;font-weight:800;color:#166534;max-width:230px}
+    section{padding:66px 0}.section-head{max-width:780px;margin:0 auto 32px;text-align:center}.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.055em;margin:0 0 12px}.section-head p{font-size:18px;color:var(--muted);margin:0;font-weight:400}
+    .problem{background:white;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.problem-card{background:#f8fafc;border:1px solid var(--border);border-radius:22px;padding:24px}.problem-card .icon{font-size:26px}.problem-card h3{margin:12px 0 8px;font-size:19px;letter-spacing:-.02em}.problem-card p{margin:0;color:var(--muted)}
+    .packs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}.pack{background:white;border:1px solid var(--border);border-radius:28px;padding:28px;box-shadow:0 14px 36px rgba(15,23,42,.06);position:relative;display:flex;flex-direction:column}.pack.featured{border:2px solid #22c55e;box-shadow:var(--shadow);transform:translateY(-10px)}.tag{position:absolute;top:18px;right:18px;background:#dcfce7;color:#166534;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:900}.pack h3{font-size:24px;margin:0 0 6px}.price{font-size:48px;letter-spacing:-.07em;font-weight:900;margin:10px 0;color:#061b31}.price small{font-size:18px;color:var(--muted);letter-spacing:0;font-weight:700}.pack p{color:var(--muted);margin:0 0 18px}.pack ul{padding:0;margin:0 0 24px;list-style:none;display:grid;gap:11px}.pack li{display:flex;gap:9px;color:#334155;font-weight:500}.pack li:before{content:"✓";color:#16a34a;font-weight:900}.pack .btn{margin-top:auto;width:100%}
+    .how{background:#061b31;color:white}.how .section-head p{color:#cbd5e1}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:24px}.num{width:42px;height:42px;border-radius:14px;background:#22c55e;color:white;display:grid;place-items:center;font-weight:900;margin-bottom:16px}.step h3{margin:0 0 8px}.step p{margin:0;color:#cbd5e1}
+    .examples-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.example{background:white;border:1px solid var(--border);border-radius:22px;padding:18px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between}.example strong{font-size:18px}.example span{color:var(--muted);font-size:14px}.chip{align-self:flex-start;background:#ecfdf5;color:#166534;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:900}
+    .proof{background:white}.proof-box{display:grid;grid-template-columns:1fr 1fr;gap:20px}.compare{border-radius:28px;padding:28px;border:1px solid var(--border)}.bad{background:#fff1f2}.good{background:#f0fdf4}.compare h3{font-size:26px;margin:0 0 16px}.compare ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;color:#334155;font-weight:500}.compare li{display:flex;gap:8px}
+    .faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}.faq-item{background:white;border:1px solid var(--border);border-radius:22px;padding:22px}.faq-item h3{margin:0 0 8px;font-size:18px}.faq-item p{margin:0;color:var(--muted)}
+    .final{padding:70px 0 92px}.final-card{background:linear-gradient(135deg,#16a34a,#0ea5e9);border-radius:34px;padding:44px;color:white;text-align:center;box-shadow:var(--shadow)}.final-card h2{font-size:clamp(32px,5vw,56px);line-height:1.02;letter-spacing:-.06em;margin:0 0 14px}.final-card p{margin:0 auto 24px;max-width:700px;font-size:19px;color:#eff6ff}.final-card .btn{background:white;color:#166534}.footer{padding:28px 0;border-top:1px solid var(--border);color:#64748b;font-size:14px}.footrow{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.sticky-mobile{display:none}
+    @media(max-width:900px){.navlinks{display:none}.hero{padding-top:42px}.hero-grid,.proof-box{grid-template-columns:1fr}.mock-card{max-width:520px;margin:auto}.packs,.problem-grid,.steps{grid-template-columns:1fr}.pack.featured{transform:none}.examples-grid{grid-template-columns:1fr 1fr}.faq{grid-template-columns:1fr}.floating-note{right:12px}.sample-flyer{min-height:500px}}
+    @media(max-width:560px){.wrap{width:min(100% - 24px,1120px)}.hero-actions .btn{width:100%}.sample-top h2{font-size:34px}.deal span{font-size:24px}.examples-grid{grid-template-columns:1fr}.sticky-mobile{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30}.sticky-mobile .btn{width:100%;box-shadow:0 16px 36px rgba(22,163,74,.34)}body{padding-bottom:76px}.topbar{position:relative}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#top"><span class="brand-mark">PF</span><span>PromoFlash</span></a>
+      <nav class="navlinks" aria-label="Navegación principal">
+        <a href="#paquetes">Paquetes</a>
+        <a href="#ejemplos">Para quién</a>
+        <a href="#faq">Preguntas</a>
+        <a class="btn btn-primary" href="#contacto">Pedir por WhatsApp</a>
+      </nav>
+      <a class="btn btn-primary" href="#contacto">Cotizar</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">⚡ Avisos listos en 24h · desde S/29</div>
+          <h1>Diseños bonitos para que tu negocio venda más esta semana.</h1>
+          <p class="lead">Te preparo avisos, promos, carteles y banners listos para WhatsApp, Facebook o impresión. Sin contratar agencia, sin aprender diseño y sin esperar semanas.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#paquetes">Ver paquetes y precios</a>
+            <a class="btn btn-ghost" href="#ejemplos">Ver qué puedo pedir</a>
+          </div>
+          <div class="trust-row">
+            <span class="trust-pill">Pago por Yape / Plin</span>
+            <span class="trust-pill">1 ronda de cambios incluida</span>
+            <span class="trust-pill">Entrega en PNG/PDF</span>
+          </div>
+        </div>
+        <div class="mock-card" aria-label="Ejemplo de aviso para bodega">
+          <div class="sample-flyer">
+            <div class="sample-top"><small>Bodega Rosita · Comas</small><h2>Ofertas de la semana</h2></div>
+            <div class="sample-body">
+              <div class="deal"><strong>Arroz costeño</strong><span>S/ 4.50</span></div>
+              <div class="deal"><strong>Azúcar rubia</strong><span>S/ 3.80</span></div>
+              <div class="deal"><strong>Aceite 1L</strong><span>S/ 8.90</span></div>
+              <div class="sample-footer"><span>Aceptamos Yape y Plin</span><span>999 888 777</span></div>
+            </div>
+          </div>
+          <div class="floating-note">Ejemplo: flyer + cartel A4 + estado WhatsApp</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem">
+      <div class="wrap">
+        <div class="section-head"><h2>Tu negocio no necesita “diseño caro”. Necesita avisos claros.</h2><p>Muchos negocios tienen buenas ofertas, pero las publican con fotos oscuras, texto chiquito o carteles hechos a la carrera. Eso baja confianza.</p></div>
+        <div class="problem-grid">
+          <article class="problem-card"><div class="icon">📱</div><h3>Para estados de WhatsApp</h3><p>Promos cuadradas o verticales listas para compartir al toque.</p></article>
+          <article class="problem-card"><div class="icon">🖨️</div><h3>Para imprimir</h3><p>Carteles A4 con precios grandes y datos visibles para tu local.</p></article>
+          <article class="problem-card"><div class="icon">🛒</div><h3>Para vender más ordenado</h3><p>Listas de precios, servicios, combos o menús entendibles.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="paquetes">
+      <div class="wrap">
+        <div class="section-head"><h2>Escoge un paquete simple</h2><p>Precios pensados para negocios pequeños. Sin letra chica: cada paquete tiene límite claro y cambios definidos.</p></div>
+        <div class="packs">
+          <article class="pack">
+            <h3>Pack Básico</h3><p>Para probar o publicar una promo puntual.</p><div class="price">S/29</div>
+            <ul><li>2 diseños para WhatsApp/Facebook</li><li>1 cartel simple A4</li><li>Entrega en PNG</li><li>1 ronda de cambios</li></ul>
+            <a class="btn btn-ghost" href="#contacto">Quiero el básico</a>
+          </article>
+          <article class="pack featured">
+            <span class="tag">Más recomendado</span>
+            <h3>Pack Negocio</h3><p>Para tener avisos de la semana y banner.</p><div class="price">S/49</div>
+            <ul><li>4 diseños para WhatsApp/Facebook</li><li>1 banner para WhatsApp Business</li><li>1 cartel A4 imprimible</li><li>Textos comerciales mejorados</li><li>1 ronda de cambios</li></ul>
+            <a class="btn btn-primary" href="#contacto">Pedir Pack Negocio</a>
+          </article>
+          <article class="pack">
+            <h3>Pack Completo</h3><p>Para dejar tu negocio presentable todo el mes.</p><div class="price">S/79 <small>a S/99</small></div>
+            <ul><li>6 a 8 diseños</li><li>1 banner + 2 carteles A4</li><li>Lista de precios simple</li><li>Versiones para estados</li><li>2 rondas de cambios</li></ul>
+            <a class="btn btn-ghost" href="#contacto">Quiero completo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how">
+      <div class="wrap">
+        <div class="section-head"><h2>Cómo funciona</h2><p>El proceso debe ser fácil para alguien que solo usa WhatsApp.</p></div>
+        <div class="steps">
+          <article class="step"><div class="num">1</div><h3>Me escribes</h3><p>Mandas nombre del negocio, precios, promo y teléfono.</p></article>
+          <article class="step"><div class="num">2</div><h3>Pagas por Yape/Plin</h3><p>Se confirma el paquete y el alcance para evitar vueltas.</p></article>
+          <article class="step"><div class="num">3</div><h3>Preparo tus avisos</h3><p>Se arma diseño profesional con texto legible y formato correcto.</p></article>
+          <article class="step"><div class="num">4</div><h3>Recibes y publicas</h3><p>Te entrego PNG/PDF listo para WhatsApp, Facebook o imprimir.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ejemplos">
+      <div class="wrap">
+        <div class="section-head"><h2>Sirve para muchos negocios</h2><p>No vendemos “branding complicado”. Vendemos piezas concretas para publicar y vender.</p></div>
+        <div class="examples-grid">
+          <article class="example"><span class="chip">Bodegas</span><strong>Promos, precios y Yape</strong><span>Ofertas de arroz, azúcar, aceite, gaseosas y delivery.</span></article>
+          <article class="example"><span class="chip">Barberías</span><strong>Lista de servicios</strong><span>Cortes, barba, promociones y horarios.</span></article>
+          <article class="example"><span class="chip">Restaurantes</span><strong>Menú para WhatsApp</strong><span>Combos, delivery, menú del día y carta simple.</span></article>
+          <article class="example"><span class="chip">Servicios</span><strong>Avisos profesionales</strong><span>Contadores, abogados, técnicos, consultorios y clases.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="wrap proof-box">
+        <div class="compare bad"><h3>Sin avisos claros</h3><ul><li>✕ Fotos borrosas en estados</li><li>✕ Precios pequeños o confusos</li><li>✕ Clientes preguntan lo mismo</li><li>✕ Tu negocio se ve improvisado</li></ul></div>
+        <div class="compare good"><h3>Con un pack listo</h3><ul><li>✓ Promos claras para publicar</li><li>✓ Carteles con precio grande</li><li>✓ Respondes más rápido por WhatsApp</li><li>✓ Tu negocio se ve más serio</li></ul></div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <div class="section-head"><h2>Preguntas rápidas</h2><p>Para que el cliente entienda antes de escribir.</p></div>
+        <div class="faq">
+          <article class="faq-item"><h3>¿Es por paquete o por diseño?</h3><p>Lo principal es por paquete. Diseño suelto puede salir S/15, pero conviene más el Pack Negocio de S/49.</p></article>
+          <article class="faq-item"><h3>¿Qué pasa si quiero cambios?</h3><p>Incluye 1 ronda de cambios. Cambios adicionales pueden cobrarse desde S/10 según el caso.</p></article>
+          <article class="faq-item"><h3>¿Puedo mandar mi logo?</h3><p>Sí. Si tienes logo, colores o fotos de tus productos, los usamos. Si no tienes, armamos algo limpio y ordenado.</p></article>
+          <article class="faq-item"><h3>¿Cuánto demora?</h3><p>Normalmente 24 horas para paquetes chicos. Si hay muchos productos o cambios, se coordina antes.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="final">
+      <div class="wrap">
+        <div class="final-card">
+          <h2>Haz que tu negocio se vea listo para vender.</h2>
+          <p>Escríbeme qué vendes, qué promoción tienes y qué paquete quieres. Te respondo con lo que necesito para empezar.</p>
+          <a class="btn" id="waBtn" href="https://wa.me/51999999999?text=Hola%2C%20quiero%20un%20paquete%20de%20avisos%20para%20mi%20negocio.%20Me%20interesa%20el%20Pack%20Negocio%20de%20S%2F49." target="_blank" rel="noopener">Pedir por WhatsApp</a>
+          <p style="font-size:14px;margin-top:14px;color:#dcfce7">Yape / Plin: 930267188 · Demo: falta cambiar el número de WhatsApp real antes de publicar.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap footrow"><span>PromoFlash · Landing demo aislada en Docker</span><span>Paquetes desde S/29 · Perú</span></div></footer>
+  <div class="sticky-mobile"><a class="btn btn-primary" href="#paquetes">Ver paquetes desde S/29</a></div>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');const el=document.querySelector(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}}));
+  </script>
+</body>
+</html>
