@@ -61,6 +61,7 @@
     .deal strong{font-size:22px}.deal span{font-size:30px;color:#15803d;font-weight:900;letter-spacing:-.05em}
     .sample-footer{margin-top:auto;background:#fff7ed;border-radius:18px;padding:18px;color:#9a3412;font-weight:800;display:flex;justify-content:space-between;gap:10px;align-items:center}
     .floating-note{position:absolute;right:-12px;bottom:32px;background:#fff;border:1px solid var(--border);box-shadow:0 14px 40px rgba(15,23,42,.14);border-radius:18px;padding:14px 16px;font-weight:800;color:#166534;max-width:230px}
+    .design-flash{padding:36px 0 70px;background:linear-gradient(180deg,#f7faf8 0%,#fff 100%);overflow:hidden}.flash-shell{background:#fff;border:1px solid var(--border);border-radius:34px;padding:28px;box-shadow:var(--shadow);position:relative}.flash-shell:before{content:"";position:absolute;inset:18px auto auto -34px;width:120px;height:120px;background:#dcfce7;border-radius:999px;filter:blur(8px);opacity:.75}.flash-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:22px;position:relative}.flash-head h2{font-size:clamp(28px,4vw,44px);line-height:1.02;letter-spacing:-.055em;margin:0}.flash-head p{margin:8px 0 0;color:#475569;max-width:560px}.flash-badge{background:#fff7ed;color:#9a3412;border:1px solid #fed7aa;border-radius:999px;padding:9px 13px;font-weight:900;white-space:nowrap}.design-reel{display:grid;grid-template-columns:1.05fr .9fr 1.05fr;gap:18px;align-items:stretch}.mini-design{min-height:330px;border-radius:26px;overflow:hidden;box-shadow:0 18px 40px rgba(15,23,42,.13);border:1px solid rgba(15,23,42,.08);position:relative;background:#fff;transform:rotate(var(--tilt));transition:.25s ease}.mini-design:hover{transform:rotate(0deg) translateY(-4px)}.mini-design .top{padding:22px;color:white}.mini-design .top small{font-weight:900;opacity:.9}.mini-design .top h3{font-size:34px;line-height:.98;letter-spacing:-.055em;margin:8px 0 0}.mini-design .body{padding:18px}.mini-design .line{height:12px;border-radius:999px;background:#e2e8f0;margin:10px 0}.mini-design .big-price{font-size:46px;font-weight:900;letter-spacing:-.07em}.mini-design .foot{position:absolute;left:18px;right:18px;bottom:18px;border-radius:16px;padding:14px;font-weight:900}.bodega{--tilt:-2deg}.bodega .top{background:linear-gradient(135deg,#16a34a,#84cc16)}.bodega .big-price{color:#15803d}.bodega .foot{background:#dcfce7;color:#166534}.menu{--tilt:1.5deg}.menu .top{background:linear-gradient(135deg,#f97316,#f59e0b)}.menu .big-price{color:#c2410c}.menu .foot{background:#ffedd5;color:#9a3412}.barber{--tilt:-1deg}.barber .top{background:linear-gradient(135deg,#2563eb,#0ea5e9)}.barber .big-price{color:#1d4ed8}.barber .foot{background:#dbeafe;color:#1e40af}.format-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;justify-content:center}.format-row span{background:#f8fafc;border:1px solid var(--border);border-radius:999px;padding:9px 12px;color:#334155;font-weight:800;font-size:13px}
     section{padding:66px 0}.section-head{max-width:780px;margin:0 auto 32px;text-align:center}.section-head h2{font-size:clamp(30px,4vw,46px);line-height:1.05;letter-spacing:-.055em;margin:0 0 12px}.section-head p{font-size:18px;color:var(--muted);margin:0;font-weight:400}
     .problem{background:white;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
     .problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.problem-card{background:#f8fafc;border:1px solid var(--border);border-radius:22px;padding:24px}.problem-card .icon{font-size:26px}.problem-card h3{margin:12px 0 8px;font-size:19px;letter-spacing:-.02em}.problem-card p{margin:0;color:var(--muted)}
@@ -70,8 +71,8 @@
     .proof{background:white}.proof-box{display:grid;grid-template-columns:1fr 1fr;gap:20px}.compare{border-radius:28px;padding:28px;border:1px solid var(--border)}.bad{background:#fff1f2}.good{background:#f0fdf4}.compare h3{font-size:26px;margin:0 0 16px}.compare ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;color:#334155;font-weight:500}.compare li{display:flex;gap:8px}
     .faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}.faq-item{background:white;border:1px solid var(--border);border-radius:22px;padding:22px}.faq-item h3{margin:0 0 8px;font-size:18px}.faq-item p{margin:0;color:var(--muted)}
     .final{padding:70px 0 92px}.final-card{background:linear-gradient(135deg,#16a34a,#0ea5e9);border-radius:34px;padding:44px;color:white;text-align:center;box-shadow:var(--shadow)}.final-card h2{font-size:clamp(32px,5vw,56px);line-height:1.02;letter-spacing:-.06em;margin:0 0 14px}.final-card p{margin:0 auto 24px;max-width:700px;font-size:19px;color:#eff6ff}.final-card .btn{background:white;color:#166534}.footer{padding:28px 0;border-top:1px solid var(--border);color:#64748b;font-size:14px}.footrow{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.sticky-mobile{display:none}
-    @media(max-width:900px){.navlinks{display:none}.hero{padding-top:42px}.hero-grid,.proof-box{grid-template-columns:1fr}.mock-card{max-width:520px;margin:auto}.packs,.problem-grid,.steps{grid-template-columns:1fr}.pack.featured{transform:none}.examples-grid{grid-template-columns:1fr 1fr}.faq{grid-template-columns:1fr}.floating-note{right:12px}.sample-flyer{min-height:500px}}
-    @media(max-width:560px){.wrap{width:min(100% - 24px,1120px)}.hero-actions .btn{width:100%}.sample-top h2{font-size:34px}.deal span{font-size:24px}.examples-grid{grid-template-columns:1fr}.sticky-mobile{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30}.sticky-mobile .btn{width:100%;box-shadow:0 16px 36px rgba(22,163,74,.34)}body{padding-bottom:76px}.topbar{position:relative}}
+    @media(max-width:900px){.navlinks{display:none}.hero{padding-top:42px}.hero-grid,.proof-box{grid-template-columns:1fr}.mock-card{max-width:520px;margin:auto}.packs,.problem-grid,.steps{grid-template-columns:1fr}.pack.featured{transform:none}.examples-grid{grid-template-columns:1fr 1fr}.faq{grid-template-columns:1fr}.floating-note{right:12px}.sample-flyer{min-height:500px}.flash-head{display:block}.flash-badge{display:inline-flex;margin-top:14px}.design-reel{grid-template-columns:1fr}.mini-design{transform:none;min-height:300px}}
+    @media(max-width:560px){.wrap{width:min(100% - 24px,1120px)}.hero-actions .btn{width:100%}.sample-top h2{font-size:34px}.deal span{font-size:24px}.examples-grid{grid-template-columns:1fr}.flash-shell{padding:18px;border-radius:26px}.mini-design .top h3{font-size:28px}.sticky-mobile{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30}.sticky-mobile .btn{width:100%;box-shadow:0 16px 36px rgba(22,163,74,.34)}body{padding-bottom:76px}.topbar{position:relative}}
   </style>
 </head>
 <body>
@@ -116,6 +117,38 @@
             </div>
           </div>
           <div class="floating-note">Ejemplo: flyer + cartel A4 + estado WhatsApp</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="design-flash" aria-labelledby="flash-title">
+      <div class="wrap">
+        <div class="flash-shell">
+          <div class="flash-head">
+            <div>
+              <h2 id="flash-title">Así se verían tus avisos antes de publicarlos.</h2>
+              <p>Mockups rápidos para que el cliente imagine el resultado: oferta de bodega, menú de comida, lista de barbería o cartel imprimible.</p>
+            </div>
+            <span class="flash-badge">Muestras simuladas · texto legible</span>
+          </div>
+          <div class="design-reel">
+            <article class="mini-design bodega">
+              <div class="top"><small>Bodega Santa Rosa</small><h3>Promo familiar</h3></div>
+              <div class="body"><div class="big-price">S/ 12.90</div><div class="line" style="width:92%"></div><div class="line" style="width:72%"></div><div class="line" style="width:84%"></div></div>
+              <div class="foot">Estado WhatsApp + cartel A4</div>
+            </article>
+            <article class="mini-design menu">
+              <div class="top"><small>Menú del día</small><h3>Pollo + sopa + refresco</h3></div>
+              <div class="body"><div class="big-price">S/ 15</div><div class="line" style="width:80%"></div><div class="line" style="width:68%"></div><div class="line" style="width:90%"></div></div>
+              <div class="foot">Menú para enviar por WhatsApp</div>
+            </article>
+            <article class="mini-design barber">
+              <div class="top"><small>Barbería El Corte</small><h3>Lista de precios</h3></div>
+              <div class="body"><div class="big-price">desde S/ 18</div><div class="line" style="width:88%"></div><div class="line" style="width:76%"></div><div class="line" style="width:64%"></div></div>
+              <div class="foot">Servicios claros para publicar</div>
+            </article>
+          </div>
+          <div class="format-row"><span>Flyer cuadrado</span><span>Historia vertical</span><span>Cartel A4</span><span>Banner WhatsApp</span><span>Lista de precios</span></div>
         </div>
       </div>
     </section>
