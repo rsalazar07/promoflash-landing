@@ -95,6 +95,11 @@
     @media(max-width:900px){.sample-player{padding:0 46px 42px}.sample-slide{flex-basis:calc((100% - 18px)/2);min-height:320px}}
     @media(max-width:640px){.sample-player{padding:0 0 42px}.sample-viewport{overflow:hidden;border-radius:22px;padding:8px 0 16px}.sample-track{gap:0}.sample-slide{flex:0 0 100%;min-height:350px;border-radius:22px}.sample-slide .top h3{font-size:31px}.sample-slide .big-price{font-size:43px}.sample-slide .sample-copy{font-size:16px;line-height:1.45}.sample-slide .foot{font-size:14px;padding:13px}.sample-nav{top:auto;bottom:0;width:38px;height:38px;font-size:30px}.sample-nav.prev{left:calc(50% - 90px)}.sample-nav.next{right:calc(50% - 90px)}.sample-dots{bottom:13px;pointer-events:none}.format-row{margin-top:8px}}
 
+  
+    .sample-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .sample-tags span{display:inline-flex;align-items:center;border-radius:999px;background:#f8fafc;border:1px solid #e2e8f0;color:#334155;font-size:13px;font-weight:900;padding:8px 10px}
+    @media(max-width:640px){.sample-tags span{font-size:13px;padding:8px 9px}.sample-tags{gap:7px}}
+
   </style>
 </head>
 <body>
@@ -150,8 +155,8 @@
         <div class="flash-shell">
           <div class="flash-head">
             <div>
-              <h2 id="flash-title">Muestras simuladas que se reproducen solas.</h2>
-              <p>Desliza o espera unos segundos: verás ejemplos de avisos para bodega, comida, barbería, servicios y cartel imprimible.</p>
+              <h2 id="flash-title">Muestras simuladas listas, sin rellenos raros.</h2>
+              <p>Desliza o espera unos segundos: cada muestra ahora tiene textos reales y formatos claros, no barras de relleno.</p>
             </div>
             <span class="flash-badge">▶ Reproducción automática</span>
           </div>
@@ -162,27 +167,27 @@
               <div class="sample-track">
                 <article class="mini-design bodega sample-slide">
                   <div class="top"><small>Bodega Santa Rosa</small><h3>Promo familiar</h3></div>
-                  <div class="body"><div class="big-price">S/ 12.90</div><p class="sample-copy">Combo ahorro: arroz + aceite + azúcar para publicar hoy en WhatsApp.</p><div class="line" style="width:92%"></div><div class="line" style="width:72%"></div></div>
+                  <div class="body"><div class="big-price">S/ 12.90</div><p class="sample-copy">Combo ahorro: arroz + aceite + azúcar para publicar hoy en WhatsApp.</p><div class="sample-tags"><span>Precio claro</span><span>Promo lista</span><span>WhatsApp</span></div></div>
                   <div class="foot">Estado WhatsApp + cartel A4</div>
                 </article>
                 <article class="mini-design menu sample-slide">
                   <div class="top"><small>Menú del día</small><h3>Pollo + sopa + refresco</h3></div>
-                  <div class="body"><div class="big-price">S/ 15</div><p class="sample-copy">Menú claro para enviar a clientes y pegar en la puerta.</p><div class="line" style="width:80%"></div><div class="line" style="width:68%"></div></div>
+                  <div class="body"><div class="big-price">S/ 15</div><p class="sample-copy">Menú claro para enviar a clientes y pegar en la puerta.</p><div class="sample-tags"><span>Menú diario</span><span>Imagen lista</span><span>Imprimible</span></div></div>
                   <div class="foot">Menú para enviar por WhatsApp</div>
                 </article>
                 <article class="mini-design barber sample-slide">
                   <div class="top"><small>Barbería El Corte</small><h3>Lista de precios</h3></div>
-                  <div class="body"><div class="big-price">desde S/ 18</div><p class="sample-copy">Servicios ordenados: corte, barba, cejas y promociones.</p><div class="line" style="width:88%"></div><div class="line" style="width:76%"></div></div>
+                  <div class="body"><div class="big-price">desde S/ 18</div><p class="sample-copy">Servicios ordenados: corte, barba, cejas y promociones.</p><div class="sample-tags"><span>Servicios</span><span>Precios</span><span>Agenda</span></div></div>
                   <div class="foot">Servicios claros para publicar</div>
                 </article>
                 <article class="mini-design service sample-slide">
                   <div class="top"><small>Técnico a domicilio</small><h3>Reparación express</h3></div>
-                  <div class="body"><div class="big-price">S/ 35</div><p class="sample-copy">Aviso para captar clientes: celulares, laptops o electrodomésticos.</p><div class="line" style="width:84%"></div><div class="line" style="width:70%"></div></div>
+                  <div class="body"><div class="big-price">S/ 35</div><p class="sample-copy">Aviso para captar clientes: celulares, laptops o electrodomésticos.</p><div class="sample-tags"><span>Urgente</span><span>Delivery</span><span>Contacto</span></div></div>
                   <div class="foot">Historia vertical + flyer</div>
                 </article>
                 <article class="mini-design print sample-slide">
                   <div class="top"><small>Cartel imprimible</small><h3>Oferta de la semana</h3></div>
-                  <div class="body"><div class="big-price">A4</div><p class="sample-copy">Diseño limpio para imprimir, pegar en vitrina y mandar por chat.</p><div class="line" style="width:90%"></div><div class="line" style="width:62%"></div></div>
+                  <div class="body"><div class="big-price">A4</div><p class="sample-copy">Diseño limpio para imprimir, pegar en vitrina y mandar por chat.</p><div class="sample-tags"><span>PDF</span><span>PNG</span><span>Vitrina</span></div></div>
                   <div class="foot">PDF + imagen lista</div>
                 </article>
               </div>
